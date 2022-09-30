@@ -1,4 +1,5 @@
 import "./App.css";
+// import { ReactDOM } from "react";
 /*
 import ConstLet from "./chapters/chapter-2-syntax-additions/const-let";
 import Funcs from "./chapters/chapter-2-syntax-additions/functions";
@@ -27,13 +28,30 @@ import Traps from "./chapters/chapter-10-API-proxy/traps";
 import ProxyAsPrototype from "./chapters/chapter-10-API-proxy/proxy-as-prototype";
 import ProxyAsProxy from "./chapters/chapter-10-API-proxy/proxy-as-proxy";
 import WrapFuncs from "./chapters/chapter-10-API-proxy/wrap-funcs";
-import RevocableProxy from "./chapters/chapter-10-API-proxy/revocable-proxy";*/
+import RevocableProxy from "./chapters/chapter-10-API-proxy/revocable-proxy";
 import Weather from "./chapters/chapter-11-project/Weather";
+import User from "./exercises/prettyPrintJSON";
+import OnLoad, { OnLoadFunctional } from "./exercises/focunAnInputOnLoad";
+import UpdateRenderedElems from "./exercises/updateRenderedElems";
+import "./exercises/asyncAwait";
+import Timer from "./exercises/timer";*/
+import Counter from "./exercises/useEffectEx";
+
+// function tick() {
+//   const element = (
+//     <div>
+//       <h1>Hello, world!</h1>
+//       <h2>It is {new Date().toLocaleTimeString()}.</h2>
+//     </div>
+//   );
+//   ReactDOM.render(element, document.getElementById("root"));
+// }
+// setInterval(tick, 1000);
 
 function App() {
   return (
     <div className="App">
-      {/*<div className="App-header">
+      <div className="App-header">
         <h2>Accelerated ES6 Javascript Training</h2>
         <a
           className="App-link"
@@ -43,7 +61,7 @@ function App() {
         >
           Udemy Course
         </a>
-         <ConstLet />
+        {/* <ConstLet />
         <Funcs />
         <ObjLiteral />
         <ObjDestruct />
@@ -71,8 +89,16 @@ function App() {
         <ProxyAsProxy />
         <WrapFuncs />
         <RevocableProxy />
-      </div>*/}
-      <Weather />
+        <User />
+        <OnLoad />
+        <OnLoadFunctional />
+        <Timer />*/}
+        <Counter />
+
+        {/* {setInterval(<UpdateRenderedElems />, 1000)} */}
+        {/* <UpdateRenderedElems /> */}
+      </div>
+      {/* <Weather /> */}
     </div>
   );
 }
